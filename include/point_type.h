@@ -41,15 +41,7 @@ namespace pc {
     }
   };
 
-<<<<<<< HEAD
   std::ostream& operator << (std::ostream& os, const PointNormal& pt);
-=======
-  std::ostream& operator << (std::ostream& os, const PointNormal& pt) {
-    os << pt.x << " " << pt.y << " " << pt.z << " "
-       << pt.nx << " " << pt.ny << " " << pt.nz;
-    return os;
-  }
->>>>>>> 756abd7752b21a06312a4b716e561f463f747b43
 }
 
 #endif
