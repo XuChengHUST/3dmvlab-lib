@@ -43,93 +43,98 @@ namespace pc {
     typedef std::vector<PointNormal>::iterator iterator;
 	  typedef std::vector<PointNormal>::const_iterator const_iterator;
 
-    inline iterator begin () {
+    iterator begin () {
       return pts.begin();
     }
 
-    inline iterator end() {
+    iterator end() {
       return pts.end();
     }
-    inline const_iterator begin() const {
+
+    const_iterator begin() const {
       return pts.begin();
     }
 
-    inline const_iterator end() const {
+    const_iterator end() const {
       return pts.end();
     }
 
-    inline size_t size() const {
+    size_t size() const {
       return pts.size();
     }
 
-    inline void reserve(size_t n) {
+    size_t capacity() const {
+      return pts.capacity();
+    }
+
+    void reserve(size_t n) {
       pts.reserve(n);
     }
 
-    inline bool empty() const {
+    bool empty() const {
       return pts.empty();
     }
 
-    inline void resize(size_t n) {
+    void resize(size_t n) {
       pts.resize(n);
     }
 
-    inline const PointNormal& operator[](size_t n) const {
+    const PointNormal& operator[](size_t n) const {
       return pts[n];
     }
 
-    inline PointNormal& operator[](size_t n) {
+    PointNormal& operator[](size_t n) {
       return pts[n];
     }
 
-    inline const PointNormal& at(size_t n) const {
+    const PointNormal& at(size_t n) const {
       return pts.at(n);
     }
 
-    inline PointNormal& at(size_t n) {
+    PointNormal& at(size_t n) {
       return pts.at(n);
     }
 
-    inline const PointNormal& front () const {
+    const PointNormal& front () const {
       return pts.front();
     }
 
-    inline PointNormal& front() {
+    PointNormal& front() {
       return pts.front ();
     }
 
-    inline const PointNormal& back() const {
+    const PointNormal& back() const {
       return pts.back ();
     }
 
-    inline PointNormal& back() {
+    PointNormal& back() {
       return pts.back ();
     }
 
-    inline void push_back (const PointNormal& pt) {
+    void push_back (const PointNormal& pt) {
       pts.push_back(pt);
     }
 
-    inline iterator insert(iterator position, const PointNormal& pt) {
+    iterator insert(iterator position, const PointNormal& pt) {
       iterator it = pts.insert (position, pt);
       return it;
     }
 
-    inline iterator erase(iterator position) {
+    iterator erase(iterator position) {
       iterator it = pts.erase (position);
       return it;
     }
 
-    inline iterator erase (iterator first, iterator last) {
+    iterator erase (iterator first, iterator last) {
       iterator it = pts.erase (first, last);
       return it;
     }
 
-    inline void swap (PointCloud &rhs) {
+    void swap (PointCloud &rhs) {
       this->pts.swap (rhs.pts);
     }
 
-    inline void clear () {
+    void clear () {
       pts.clear ();
     }
 
@@ -141,13 +146,7 @@ namespace pc {
     std::vector<PointNormal> pts;
   };
 
-  std::ostream& operator << (std::ostream& os, const PointCloud& pc) {
-    os << "points size: " << pc.size() << '\n'
-       << "x y z nx ny nz" << '\n';
-    for (size_t i = 0; i < pc.size(); i++)
-      os << pc.at(i) << '\n';
-    return os;
-  }
+  std::ostream& operator << (std::ostream& os, const PointCloud& pc);
 }
 
 #endif

@@ -1,1 +1,0 @@
-/home/root/LEARN/task/3dmvlab-lib/build/test/CMakeFiles/testPointCloud.dir
