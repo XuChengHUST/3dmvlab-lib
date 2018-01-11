@@ -1,4 +1,0 @@
-/home/root/code/3dmvlab_lib/build/src/CMakeFiles/io.dir
-/home/root/code/3dmvlab_lib/build/src/CMakeFiles/kdtree.dir
-/home/root/code/3dmvlab_lib/build/test/CMakeFiles/testPointCloud.dir
-/home/root/code/3dmvlab_lib/build/test/CMakeFiles/testKdtree.dir

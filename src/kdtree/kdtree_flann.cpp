@@ -1,9 +1,12 @@
 #include "kdtree_flann.h"
 
-namespace pc {
-  void KdTreeFLANN::setInputCloud(const pc::PointCloud& cloud) {
+namespace pc
+{
+  void KdTreeFLANN::setInputCloud(const pc::PointCloud& cloud)
+  {
     cloud_->reserve(3*cloud.size());
-    for(pc::PointCloud::iterator iter = cloud.begin(); iter != cloud.end(); iter++) {
+    for(pc::PointCloud::iterator iter = cloud.begin(); iter != cloud.end(); iter++)
+    {
       cloud_.push_back(iter->x);
       cloud_.push_back(iter->y);
       cloud_.push_back(iter->z);

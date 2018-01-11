@@ -1,2 +1,0 @@
-/usr/bin/ar cq ../../lib/libkdtree.a  CMakeFiles/kdtree.dir/kdtree_flann.cpp.o
-/usr/bin/ranlib ../../lib/libkdtree.a

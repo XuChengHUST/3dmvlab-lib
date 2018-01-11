@@ -14,4 +14,22 @@ namespace pc {
                                    ac.pVertex_[3*i+2]));
     }
   }
+  // void writePCFileAscii(const std::string& filename, pc::PointCloud& pc)
+  // {
+  //   std::ofstream ofs;
+  //   ofs.open(filename);
+  //   if(!ofs.is_open())
+  //   {
+  //     std::cout << filename << " open failed." << '\n';
+  //     return;
+  //   }
+  //   else
+  //   {
+  //     for(int i = 0; i != pts.size(); ++i)
+  //       ofs << pc.at(i).x << " "
+  //           << pc.at(i).y << " "
+  //           << pc.at(i).z << '\n';
+  //   }
+  //   ofs.close();
+  // }
 }
