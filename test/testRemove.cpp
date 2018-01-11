@@ -18,7 +18,9 @@ int main(int argc, char** argv) {
   pc::remove_outliers(pts,rest_point,a,k);
   std::ofstream ofs(argv[4]);
   for(size_t i = 0; i != rest_point.size(); ++i ) {
-    ofs<<pts.at(rest_point[i]).x<<" "<<pts.at(rest_point[i]).y<<" "<<pts.at(rest_point[i]).z<<std::endl;
+    ofs << pts.at(rest_point[i]).x << " "
+        << pts.at(rest_point[i]).y << " "
+        << pts.at(rest_point[i]).z << '\n';
   }
   ofs.close();
   return 0;
