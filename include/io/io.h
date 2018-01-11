@@ -7,6 +7,7 @@
 
 namespace pc {
   void readACToPointCloud(const std::string& filename, pc::PointCloud& pc);
+  // void writePCFileAscii(const std::string& filename, std::vector<int>& point);
 }
 
 #endif

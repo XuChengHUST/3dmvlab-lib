@@ -7,7 +7,15 @@ add_library( io STATIC
 add_library( kdtree STATIC
   kdtree_flann.cpp
 )
-
 target_link_libraries( kdtree
   ${THIRD_PARTY_LIBS}
 )
+
+
+add_library( filter STATIC
+    remove_outliers.cpp
+    kdtree_flann.cpp
+)
+# target_link_libraries( filter
+#   ${THIRD_PARTY_LIBS}
+# )
