@@ -1,0 +1,1 @@
+g++   -std=c++11 -O3 -O3 -DNDEBUG    CMakeFiles/testKdtree.dir/testKdtree.cpp.o  -o ../../bin/testKdtree -rdynamic ../../lib/libkdtree.a ../../lib/libio.a 
