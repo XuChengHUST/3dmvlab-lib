@@ -1,12 +1,12 @@
 #include "remove_outliers.h"
 
 namespace pc {
-  void remove_outliers(pc::PointCloud& cloud, std::vector<int>& out,
+  void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,
                        int k = 10, float factor = 1.0f) {
-    out.clear();
+    indices.clear();
     pc::KdTreeFLANN kdtree;
     kdtree.setInputCloud(cloud);
-    std::vector<float> d_set;     //全部点k领域平均距离
+    std::vector<float> d_set;     //全部点k域平均距离
 
     for(size_t i = 0; i != cloud.size(); ++i ) {
       std::vector<int> k_indices;
@@ -35,11 +35,11 @@ namespace pc {
     float mean = sum_d/N;                       //平均值
     float sd = sqrt(sum_d_squ/N - pow(mean,2)); //标准差
 
-    float min = mean - a*sd;
-    float max = mean + a*sd;
+    float min = mean - factor * sd;
+    float max = mean + factor * sd;
     for(size_t k = 0;k != N; ++k) {
       if(d_set.at(k) > min && d_set.at(k) < max)
-        out.push_back(k);
+        indices.push_back(k);
     }
   }
 }
