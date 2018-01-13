@@ -10,8 +10,13 @@ target_link_libraries( testKdtree
 )
 
 
-add_executable( testremove testremove.cpp )
-target_link_libraries( testremove
+add_executable( testRemove testRemove.cpp )
+target_link_libraries( testRemove
   kdtree io filter
   ${THIRD_PARTY_LIBS}
+)
+
+add_executable( testCluster testCluster.cpp )
+target_link_libraries(testCluster
+  kdtree io cluster
 )
