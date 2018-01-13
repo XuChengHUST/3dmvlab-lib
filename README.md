@@ -1,8 +1,2 @@
 # 3dmvlab-lib
-point cloud processing tools for 3dmvlab
-
-<<<<<<< HEAD
-master branch
-=======
-dev branch
->>>>>>> dev
+3D point cloud processing tools for 3dmvlab
