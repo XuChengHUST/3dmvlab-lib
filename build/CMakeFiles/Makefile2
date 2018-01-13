@@ -238,9 +238,9 @@ test/preinstall:
 # Target rules for target test/CMakeFiles/testCluster.dir
 
 # All Build rule for target.
-test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/cluster.dir/all
 test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/io.dir/all
 test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/kdtree.dir/all
+test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/cluster.dir/all
 	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/depend
 	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  9
@@ -346,9 +346,9 @@ clean: test/CMakeFiles/testPointCloud.dir/clean
 # Target rules for target test/CMakeFiles/testRemove.dir
 
 # All Build rule for target.
-test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/filter.dir/all
 test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/io.dir/all
 test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/kdtree.dir/all
+test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/filter.dir/all
 	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/depend
 	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  12

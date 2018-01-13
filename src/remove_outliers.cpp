@@ -6,40 +6,33 @@ namespace pc {
     indices.clear();
     pc::KdTreeFLANN kdtree;
     kdtree.setInputCloud(cloud);
-    std::vector<float> d_set;     //全部点k域平均距离
 
+    //计算每个点到最近K个点的平均距离
+    std::vector<float> meandists_point_knn;
     for(size_t i = 0; i != cloud.size(); ++i ) {
       std::vector<int> k_indices;
       std::vector<float> k_sqr_distances;
       kdtree.nearestKSearch(cloud.at(i), k, k_indices, k_sqr_distances);
 
-      int index = 0;
-      float distance=0;
+      int knn_count = 0;
+      float sumdist_point_knn = 0.0f;
       std::vector<float>::iterator dist_iter = k_sqr_distances.begin();
-      std::vector<int>::iterator idx_iter = k_indices.begin();
-      for(; dist_iter != k_sqr_distances.end(); ++dist_iter, ++idx_iter, ++index)
-      {
-        distance += sqrt( *dist_iter );
-      }
-      distance = distance/index;
-      d_set.push_back(distance);
+      for(std::vector<float>::iterator dist_iter = k_sqr_distances.begin();
+          dist_iter != k_sqr_distances.end();
+          ++dist_iter, ++knn_count)
+        sumdist_point_knn += sqrt( *dist_iter );
+      meandists_point_knn.push_back(sumdist_point_knn/knn_count);
     }
 
-    float sum_d = 0;
-    float sum_d_squ = 0;
-    int N = d_set.size();
-    for(auto it = d_set.begin(); it != d_set.end(); ++it) {
-      sum_d += (*it);
-      sum_d_squ += pow(*it, 2);
-    }
-    float mean = sum_d/N;                       //平均值
-    float sd = sqrt(sum_d_squ/N - pow(mean,2)); //标准差
+    float meandist_cloud_knn = mean(meandists_point_knn);
+    float stdevdist_cloud_knn = standard_deviation(meandists_point_knn);
+    float min_dist_threshold = meandist_cloud_knn - factor * stdevdist_cloud_knn;
+    float max_dist_threshold = meandist_cloud_knn + factor * stdevdist_cloud_knn;
 
-    float min = mean - factor * sd;
-    float max = mean + factor * sd;
-    for(size_t j = 0;j != N; ++j) {
-      if(d_set.at(j) > min && d_set.at(j) < max)
-        indices.push_back(j);
+    for(size_t i = 0; i != meandists_point_knn.size(); ++i) {
+      if(meandists_point_knn.at(k) >= min_dist_threshold &&
+         meandists_point_knn.at(k) <= max_dist_threshold)
+        indices.push_back(i);
     }
   }
 }
