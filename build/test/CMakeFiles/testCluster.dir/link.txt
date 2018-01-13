@@ -1,0 +1,1 @@
+g++   -std=c++11 -O3 -O3 -DNDEBUG    CMakeFiles/testCluster.dir/testCluster.cpp.o  -o ../../bin/testCluster -rdynamic ../../lib/libkdtree.a ../../lib/libio.a ../../lib/libcluster.a 

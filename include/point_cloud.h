@@ -139,8 +139,8 @@ namespace pc {
     }
 
     PointCloud mean() {
-
     }
+
 
   private:
     std::vector<PointNormal> pts;

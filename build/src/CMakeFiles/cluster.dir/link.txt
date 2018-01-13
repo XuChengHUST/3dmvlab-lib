@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/libcluster.a  CMakeFiles/cluster.dir/kdtree_flann.cpp.o CMakeFiles/cluster.dir/cluster.cpp.o
+/usr/bin/ranlib ../../lib/libcluster.a

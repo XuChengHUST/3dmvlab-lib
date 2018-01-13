@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <fstream>
 
 // for Eigen
 #include <Eigen/Core>
