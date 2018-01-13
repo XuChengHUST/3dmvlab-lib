@@ -99,6 +99,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/cluster.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/cluster.dir/rule
+.PHONY : src/CMakeFiles/cluster.dir/rule
+
+# Convenience name for target.
+cluster: src/CMakeFiles/cluster.dir/rule
+.PHONY : cluster
+
+# fast build rule for target.
+cluster/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/build
+.PHONY : cluster/fast
+
+# Convenience name for target.
 src/CMakeFiles/filter.dir/rule:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/filter.dir/rule
 .PHONY : src/CMakeFiles/filter.dir/rule
@@ -164,6 +178,30 @@ ac_type.cpp.s:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/ac_type.cpp.s
 .PHONY : ac_type.cpp.s
 
+cluster.o: cluster.cpp.o
+.PHONY : cluster.o
+
+# target to build an object file
+cluster.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.o
+.PHONY : cluster.cpp.o
+
+cluster.i: cluster.cpp.i
+.PHONY : cluster.i
+
+# target to preprocess a source file
+cluster.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.i
+.PHONY : cluster.cpp.i
+
+cluster.s: cluster.cpp.s
+.PHONY : cluster.s
+
+# target to generate assembly for a file
+cluster.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.s
+.PHONY : cluster.cpp.s
+
 io.o: io.cpp.o
 .PHONY : io.o
 
@@ -193,6 +231,7 @@ kdtree_flann.o: kdtree_flann.cpp.o
 
 # target to build an object file
 kdtree_flann.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.o
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.o
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.o
 .PHONY : kdtree_flann.cpp.o
@@ -202,6 +241,7 @@ kdtree_flann.i: kdtree_flann.cpp.i
 
 # target to preprocess a source file
 kdtree_flann.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.i
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.i
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.i
 .PHONY : kdtree_flann.cpp.i
@@ -211,6 +251,7 @@ kdtree_flann.s: kdtree_flann.cpp.s
 
 # target to generate assembly for a file
 kdtree_flann.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.s
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.s
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.s
 .PHONY : kdtree_flann.cpp.s
@@ -269,6 +310,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cluster"
 	@echo "... edit_cache"
 	@echo "... filter"
 	@echo "... io"
@@ -277,6 +319,9 @@ help:
 	@echo "... ac_type.o"
 	@echo "... ac_type.i"
 	@echo "... ac_type.s"
+	@echo "... cluster.o"
+	@echo "... cluster.i"
+	@echo "... cluster.s"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"

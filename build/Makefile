@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cluster
+
+# Build rule for target.
+cluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cluster
+.PHONY : cluster
+
+# fast build rule for target.
+cluster/fast:
+	$(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/build
+.PHONY : cluster/fast
+
+#=============================================================================
 # Target rules for targets named filter
 
 # Build rule for target.
@@ -138,6 +151,19 @@ kdtree/fast:
 .PHONY : kdtree/fast
 
 #=============================================================================
+# Target rules for targets named testCluster
+
+# Build rule for target.
+testCluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testCluster
+.PHONY : testCluster
+
+# fast build rule for target.
+testCluster/fast:
+	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/build
+.PHONY : testCluster/fast
+
+#=============================================================================
 # Target rules for targets named testKdtree
 
 # Build rule for target.
@@ -164,17 +190,17 @@ testPointCloud/fast:
 .PHONY : testPointCloud/fast
 
 #=============================================================================
-# Target rules for targets named testremove
+# Target rules for targets named testRemove
 
 # Build rule for target.
-testremove: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testremove
-.PHONY : testremove
+testRemove: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testRemove
+.PHONY : testRemove
 
 # fast build rule for target.
-testremove/fast:
-	$(MAKE) -f test/CMakeFiles/testremove.dir/build.make test/CMakeFiles/testremove.dir/build
-.PHONY : testremove/fast
+testRemove/fast:
+	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
+.PHONY : testRemove/fast
 
 # Help Target
 help:
@@ -184,12 +210,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cluster"
 	@echo "... filter"
 	@echo "... io"
 	@echo "... kdtree"
+	@echo "... testCluster"
 	@echo "... testKdtree"
 	@echo "... testPointCloud"
-	@echo "... testremove"
+	@echo "... testRemove"
 .PHONY : help
 
 

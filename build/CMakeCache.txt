@@ -180,6 +180,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Dependencies for target
+cluster_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 filter_LIB_DEPENDS:STATIC=
 
 //Dependencies for target

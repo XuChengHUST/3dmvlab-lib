@@ -15,6 +15,8 @@ vector
 -
 iostream
 -
+fstream
+-
 Eigen/Core
 -
 Eigen/Geometry
@@ -34,9 +36,21 @@ point_type.h
 common_include.h
 ../include/common_include.h
 
+../include/remove_outliers.h
+point_cloud.h
+../include/point_cloud.h
+common_include.h
+../include/common_include.h
+kdtree/kdtree_flann.h
+../include/kdtree/kdtree_flann.h
+
 /home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp
 kdtree/kdtree_flann.h
 /home/root/LEARN/task/3dmvlab-lib/src/kdtree/kdtree_flann.h
+
+/home/root/LEARN/task/3dmvlab-lib/src/remove_outliers.cpp
+remove_outliers.h
+/home/root/LEARN/task/3dmvlab-lib/src/remove_outliers.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
