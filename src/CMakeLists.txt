@@ -19,3 +19,8 @@ add_library( filter STATIC
 # target_link_libraries( filter
 #   ${THIRD_PARTY_LIBS}
 # )
+
+add_library( cluster STATIC
+  kdtree_flann.cpp
+  cluster.cpp
+)

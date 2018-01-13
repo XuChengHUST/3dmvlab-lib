@@ -8,10 +8,10 @@
 
 namespace pc
 {
-  void cluster(pc::PointCloud& cloud, std::vector<std::vector<int> >& indices, int k_close, float distance_threshold)
+  void cluster(pc::PointCloud& cloud, std::vector<std::vector<int> >& cluster_indices, int k_close, float distance_threshold)
   {
     clock_t time_start = clock();
-    indices.clear();
+    cluster_indices.clear();
     std::vector<int> checked_queue;
     std::vector<bool> processed(cloud.size(),false);  //点是否处理
 
@@ -25,9 +25,10 @@ namespace pc
     {
       if(processed[i])
         continue;
-      checked_queue.push_back(i);   //第ｉ个点
+      checked_queue.push_back(i);
       processed[i] = true;
       int checked_queue_idx = 0;
+
       while(checked_queue_idx < checked_queue.size())
       {
         kdtree.nearestKSearch(cloud.at(checked_queue.at(checked_queue_idx) ), k_close, k_indices, k_sqr_distances);
@@ -45,7 +46,8 @@ namespace pc
         }
         checked_queue_idx++;
       }
-      indices.push_back(checked_queue);
+      if(checked_queue.size() > 100)   //cluster点小于20视为体外孤点
+        cluster_indices.push_back(checked_queue);
       checked_queue.clear();
       k_indices.clear();
       k_sqr_distances.clear();

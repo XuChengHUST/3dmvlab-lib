@@ -2,7 +2,7 @@
 
 namespace pc {
   void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,
-                       int k = 10, float factor = 1.0f) {
+                       int k , float factor ) {
     indices.clear();
     pc::KdTreeFLANN kdtree;
     kdtree.setInputCloud(cloud);
@@ -37,9 +37,9 @@ namespace pc {
 
     float min = mean - factor * sd;
     float max = mean + factor * sd;
-    for(size_t k = 0;k != N; ++k) {
-      if(d_set.at(k) > min && d_set.at(k) < max)
-        indices.push_back(k);
+    for(size_t j = 0;j != N; ++j) {
+      if(d_set.at(j) > min && d_set.at(j) < max)
+        indices.push_back(j);
     }
   }
 }
