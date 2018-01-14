@@ -26,3 +26,13 @@ add_executable( testmath testmath.cpp )
 target_link_libraries(testmath
   io math
 )
+
+add_executable( testFiting testFiting.cpp )
+target_link_libraries(testFiting
+  io fit math
+)
+
+add_executable( testVoxelfilter testVoxelfilter.cpp )
+target_link_libraries(testVoxelfilter
+  io voxelfilter
+)
