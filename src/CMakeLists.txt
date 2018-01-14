@@ -1,3 +1,5 @@
+set( LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib )
+
 add_library( io STATIC
   ac_type.cpp
   io.cpp
@@ -11,11 +13,11 @@ target_link_libraries( kdtree
   ${THIRD_PARTY_LIBS}
 )
 
-
 add_library( filter STATIC
     remove_outliers.cpp
     kdtree_flann.cpp
 )
-# target_link_libraries( filter
-#   ${THIRD_PARTY_LIBS}
-# )
+
+add_library( registration STATIC
+    svdRT.cpp
+)
