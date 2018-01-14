@@ -3,6 +3,7 @@
 
 #include "point_cloud.h"
 #include "common_include.h"
+#include "math/cloud_math.h"
 #include "kdtree/kdtree_flann.h"
 
 namespace pc {
