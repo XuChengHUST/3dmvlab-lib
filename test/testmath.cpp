@@ -1,7 +1,5 @@
 #include "math/cloud_math.h"
 #include "io/io.h"
-#include "point_type.h"
-#include "point_cloud.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -15,9 +13,9 @@ int main(int argc ,char** argv)
   }
   pc::PointCloud pts;
   pc::ReadASC_xyz(argv[1], pts);
-  pc::pointNormal point = mean_point(pts);
+  pc::PointNormal point = mean(pts);
   std::cout << point.x << " "
             << point.y << " "
-            << poiny.z << '\n';
+            << point.z << '\n';
   return 0;
 }

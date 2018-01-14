@@ -1,3 +1,5 @@
+set( EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin )
+
 add_executable( testPointCloud testPointCloud.cpp )
 target_link_libraries( testPointCloud
   io
@@ -5,7 +7,6 @@ target_link_libraries( testPointCloud
 
 add_executable( testKdtree testKdtree.cpp )
 target_link_libraries( testKdtree
-  ${THIRD_PARTY_LIBS}
   kdtree io
 )
 

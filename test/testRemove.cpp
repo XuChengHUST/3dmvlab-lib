@@ -1,5 +1,5 @@
 #include "io/io.h"
-#include "remove_outliers.h"
+#include "filter/remove_outliers.h"
 
 #include <iostream>
 #include <fstream>

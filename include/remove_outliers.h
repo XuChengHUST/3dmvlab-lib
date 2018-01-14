@@ -7,6 +7,7 @@
 #include "kdtree/kdtree_flann.h"
 #include "math/cloud_math.h"
 
+//输出去孤点后的点云序号序号
 namespace pc {
   void remove_outliers(pc::PointCloud& cloud, std::vector<int>& out,
                        int k , float factor );

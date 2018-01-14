@@ -1,1 +1,0 @@
-g++   -std=c++11 -O3 -O3 -DNDEBUG    CMakeFiles/testmath.dir/testmath.cpp.o  -o ../../bin/testmath -rdynamic ../../lib/libio.a ../../lib/libmath.a 

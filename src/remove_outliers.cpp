@@ -1,9 +1,8 @@
-#include "remove_outliers.h"
+#include "filter/remove_outliers.h"
 
 namespace pc {
-  void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,
-                       int k , float factor )
-  {
+  void remove_outliers(const pc::PointCloud& cloud, std::vector<int>& indices,
+                       int k = 10, float factor = 1.0f) {
     indices.clear();
     pc::KdTreeFLANN kdtree;
     kdtree.setInputCloud(cloud);

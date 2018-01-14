@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../../lib/libmath.a  CMakeFiles/math.dir/cloud_math.cpp.o
-/usr/bin/ranlib ../../lib/libmath.a

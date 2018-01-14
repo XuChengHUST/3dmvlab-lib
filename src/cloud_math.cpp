@@ -8,20 +8,7 @@ namespace pc{
   //   return (sum/static_cast<int>(v_set.size()));
   // }
   //
-  // PointNormal mean(const PointCloud& pts)
-  // {
-  //   PointNormal point;
-  //   for(size_t i = 0; i != pts.size(); ++i )
-  //   {
-  //     point.x += pts.at(i).x;
-  //     point.y += pts.at(i).y;
-  //     point.z += pts.at(i).z;
-  //   }
-  //   point.x /= pts.size();
-  //   point.y /= pts.size();
-  //   point.z /= pts.size();
-  //   return point;
-  // }
+
   //
   // template <typename T>
   // float standard_deviation(const std::vector<T>& v_set)
@@ -30,6 +17,20 @@ namespace pc{
   //   float mean_value = mean(v_set);
   //   return std::sqrt(sqr_sum/static_cast<int>(v_set.size()) - mean_value * mean_value);
   // }
+  PointNormal mean(const PointCloud& pts)
+  {
+    PointNormal point;
+    for(size_t i = 0; i != pts.size(); ++i )
+    {
+      point.x += pts.at(i).x;
+      point.y += pts.at(i).y;
+      point.z += pts.at(i).z;
+    }
+    point.x /= pts.size();
+    point.y /= pts.size();
+    point.z /= pts.size();
+    return point;
+  }
 
   float mean(const std::vector<float>& v)
   {

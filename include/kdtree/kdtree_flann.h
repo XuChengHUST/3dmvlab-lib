@@ -16,9 +16,9 @@ namespace pc {
 
     void convertCloudToArray(const pc::PointCloud& cloud);
 
-    int nearestKSearch(const PointNormal& pt, int k,
-                       std::vector<int> &k_indices,
-                       std::vector<float> &k_sqr_distances) const;
+    void nearestKSearch(const PointNormal& pt, int k,
+                       std::vector<int>& k_indices,
+                       std::vector<float>& k_sqr_distances) const;
   private:
     std::shared_ptr<FLANNIndex> flann_index_;
 
