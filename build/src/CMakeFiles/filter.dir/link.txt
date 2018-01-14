@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../lib/libfilter.a  CMakeFiles/filter.dir/remove_outliers.cpp.o CMakeFiles/filter.dir/cloud_math.cpp.o
-/usr/bin/ranlib ../lib/libfilter.a

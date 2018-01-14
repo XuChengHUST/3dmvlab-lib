@@ -1,8 +1,0 @@
-/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/common.dir
-/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/filter.dir
-/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/io.dir
-/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/kdtree.dir
-/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/registration.dir
-/home/root/LEARN/task/3dmvlab-lib/build/test/CMakeFiles/testKdtree.dir
-/home/root/LEARN/task/3dmvlab-lib/build/test/CMakeFiles/testOutlier.dir
-/home/root/LEARN/task/3dmvlab-lib/build/test/CMakeFiles/testPointCloud.dir

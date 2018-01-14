@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../lib/libio.a  CMakeFiles/io.dir/ac_type.cpp.o CMakeFiles/io.dir/io.cpp.o CMakeFiles/io.dir/stream.cpp.o
-/usr/bin/ranlib ../lib/libio.a
