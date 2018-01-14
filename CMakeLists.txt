@@ -13,12 +13,9 @@ include_directories( "/usr/include/eigen3/" )
 # FLANN
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(FLANN REQUIRED flann)
-# link_directories(${FLANN_LIBRARY_DIRS})
 include_directories(${FLANN_INCLUDE_DIRS})
 
-set( THIRD_PARTY_LIBS
-  ${FLANN_LIBRARY_DIRS}
-)
+set(FLANN_LIBS ${FLANN_LIBRARY_DIRS})
 
 ############### source and test ######################
 include_directories( ${PROJECT_SOURCE_DIR}/include )
