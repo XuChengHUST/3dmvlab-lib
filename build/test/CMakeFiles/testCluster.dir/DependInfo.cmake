@@ -12,7 +12,6 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 SET(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/kdtree.dir/DependInfo.cmake"
   "/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/io.dir/DependInfo.cmake"
-  "/home/root/LEARN/task/3dmvlab-lib/build/src/CMakeFiles/cluster.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

@@ -99,20 +99,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testCluster.dir/rule:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testCluster.dir/rule
-.PHONY : test/CMakeFiles/testCluster.dir/rule
-
-# Convenience name for target.
-testCluster: test/CMakeFiles/testCluster.dir/rule
-.PHONY : testCluster
-
-# fast build rule for target.
-testCluster/fast:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/build
-.PHONY : testCluster/fast
-
-# Convenience name for target.
 test/CMakeFiles/testKdtree.dir/rule:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testKdtree.dir/rule
 .PHONY : test/CMakeFiles/testKdtree.dir/rule
@@ -127,6 +113,20 @@ testKdtree/fast:
 .PHONY : testKdtree/fast
 
 # Convenience name for target.
+test/CMakeFiles/testOutlier.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testOutlier.dir/rule
+.PHONY : test/CMakeFiles/testOutlier.dir/rule
+
+# Convenience name for target.
+testOutlier: test/CMakeFiles/testOutlier.dir/rule
+.PHONY : testOutlier
+
+# fast build rule for target.
+testOutlier/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/build
+.PHONY : testOutlier/fast
+
+# Convenience name for target.
 test/CMakeFiles/testPointCloud.dir/rule:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testPointCloud.dir/rule
 .PHONY : test/CMakeFiles/testPointCloud.dir/rule
@@ -139,44 +139,6 @@ testPointCloud: test/CMakeFiles/testPointCloud.dir/rule
 testPointCloud/fast:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testPointCloud.dir/build.make test/CMakeFiles/testPointCloud.dir/build
 .PHONY : testPointCloud/fast
-
-# Convenience name for target.
-test/CMakeFiles/testRemove.dir/rule:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testRemove.dir/rule
-.PHONY : test/CMakeFiles/testRemove.dir/rule
-
-# Convenience name for target.
-testRemove: test/CMakeFiles/testRemove.dir/rule
-.PHONY : testRemove
-
-# fast build rule for target.
-testRemove/fast:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
-.PHONY : testRemove/fast
-
-testCluster.o: testCluster.cpp.o
-.PHONY : testCluster.o
-
-# target to build an object file
-testCluster.cpp.o:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/testCluster.cpp.o
-.PHONY : testCluster.cpp.o
-
-testCluster.i: testCluster.cpp.i
-.PHONY : testCluster.i
-
-# target to preprocess a source file
-testCluster.cpp.i:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/testCluster.cpp.i
-.PHONY : testCluster.cpp.i
-
-testCluster.s: testCluster.cpp.s
-.PHONY : testCluster.s
-
-# target to generate assembly for a file
-testCluster.cpp.s:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/testCluster.cpp.s
-.PHONY : testCluster.cpp.s
 
 testKdtree.o: testKdtree.cpp.o
 .PHONY : testKdtree.o
@@ -231,7 +193,7 @@ testRemove.o: testRemove.cpp.o
 
 # target to build an object file
 testRemove.cpp.o:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/testRemove.cpp.o
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/testRemove.cpp.o
 .PHONY : testRemove.cpp.o
 
 testRemove.i: testRemove.cpp.i
@@ -239,7 +201,7 @@ testRemove.i: testRemove.cpp.i
 
 # target to preprocess a source file
 testRemove.cpp.i:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/testRemove.cpp.i
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/testRemove.cpp.i
 .PHONY : testRemove.cpp.i
 
 testRemove.s: testRemove.cpp.s
@@ -247,7 +209,7 @@ testRemove.s: testRemove.cpp.s
 
 # target to generate assembly for a file
 testRemove.cpp.s:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/testRemove.cpp.s
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/testRemove.cpp.s
 .PHONY : testRemove.cpp.s
 
 # Help Target
@@ -258,13 +220,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testCluster"
 	@echo "... testKdtree"
+	@echo "... testOutlier"
 	@echo "... testPointCloud"
-	@echo "... testRemove"
-	@echo "... testCluster.o"
-	@echo "... testCluster.i"
-	@echo "... testCluster.s"
 	@echo "... testKdtree.o"
 	@echo "... testKdtree.i"
 	@echo "... testKdtree.s"

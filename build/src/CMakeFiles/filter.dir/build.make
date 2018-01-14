@@ -72,51 +72,51 @@ src/CMakeFiles/filter.dir/remove_outliers.cpp.o.provides: src/CMakeFiles/filter.
 
 src/CMakeFiles/filter.dir/remove_outliers.cpp.o.provides.build: src/CMakeFiles/filter.dir/remove_outliers.cpp.o
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.o: src/CMakeFiles/filter.dir/flags.make
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.o: ../src/kdtree_flann.cpp
+src/CMakeFiles/filter.dir/cloud_math.cpp.o: src/CMakeFiles/filter.dir/flags.make
+src/CMakeFiles/filter.dir/cloud_math.cpp.o: ../src/cloud_math.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/filter.dir/kdtree_flann.cpp.o"
-	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/filter.dir/kdtree_flann.cpp.o -c /home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/filter.dir/cloud_math.cpp.o"
+	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/filter.dir/cloud_math.cpp.o -c /home/root/LEARN/task/3dmvlab-lib/src/cloud_math.cpp
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/filter.dir/kdtree_flann.cpp.i"
-	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp > CMakeFiles/filter.dir/kdtree_flann.cpp.i
+src/CMakeFiles/filter.dir/cloud_math.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/filter.dir/cloud_math.cpp.i"
+	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/root/LEARN/task/3dmvlab-lib/src/cloud_math.cpp > CMakeFiles/filter.dir/cloud_math.cpp.i
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/filter.dir/kdtree_flann.cpp.s"
-	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp -o CMakeFiles/filter.dir/kdtree_flann.cpp.s
+src/CMakeFiles/filter.dir/cloud_math.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/filter.dir/cloud_math.cpp.s"
+	cd /home/root/LEARN/task/3dmvlab-lib/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/root/LEARN/task/3dmvlab-lib/src/cloud_math.cpp -o CMakeFiles/filter.dir/cloud_math.cpp.s
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.requires:
-.PHONY : src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.requires
+src/CMakeFiles/filter.dir/cloud_math.cpp.o.requires:
+.PHONY : src/CMakeFiles/filter.dir/cloud_math.cpp.o.requires
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.provides: src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.provides.build
-.PHONY : src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.provides
+src/CMakeFiles/filter.dir/cloud_math.cpp.o.provides: src/CMakeFiles/filter.dir/cloud_math.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/cloud_math.cpp.o.provides.build
+.PHONY : src/CMakeFiles/filter.dir/cloud_math.cpp.o.provides
 
-src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.provides.build: src/CMakeFiles/filter.dir/kdtree_flann.cpp.o
+src/CMakeFiles/filter.dir/cloud_math.cpp.o.provides.build: src/CMakeFiles/filter.dir/cloud_math.cpp.o
 
 # Object files for target filter
 filter_OBJECTS = \
 "CMakeFiles/filter.dir/remove_outliers.cpp.o" \
-"CMakeFiles/filter.dir/kdtree_flann.cpp.o"
+"CMakeFiles/filter.dir/cloud_math.cpp.o"
 
 # External object files for target filter
 filter_EXTERNAL_OBJECTS =
 
-../lib/libfilter.a: src/CMakeFiles/filter.dir/remove_outliers.cpp.o
-../lib/libfilter.a: src/CMakeFiles/filter.dir/kdtree_flann.cpp.o
-../lib/libfilter.a: src/CMakeFiles/filter.dir/build.make
-../lib/libfilter.a: src/CMakeFiles/filter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/libfilter.a"
+lib/libfilter.a: src/CMakeFiles/filter.dir/remove_outliers.cpp.o
+lib/libfilter.a: src/CMakeFiles/filter.dir/cloud_math.cpp.o
+lib/libfilter.a: src/CMakeFiles/filter.dir/build.make
+lib/libfilter.a: src/CMakeFiles/filter.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../lib/libfilter.a"
 	cd /home/root/LEARN/task/3dmvlab-lib/build/src && $(CMAKE_COMMAND) -P CMakeFiles/filter.dir/cmake_clean_target.cmake
 	cd /home/root/LEARN/task/3dmvlab-lib/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/filter.dir/build: ../lib/libfilter.a
+src/CMakeFiles/filter.dir/build: lib/libfilter.a
 .PHONY : src/CMakeFiles/filter.dir/build
 
 src/CMakeFiles/filter.dir/requires: src/CMakeFiles/filter.dir/remove_outliers.cpp.o.requires
-src/CMakeFiles/filter.dir/requires: src/CMakeFiles/filter.dir/kdtree_flann.cpp.o.requires
+src/CMakeFiles/filter.dir/requires: src/CMakeFiles/filter.dir/cloud_math.cpp.o.requires
 .PHONY : src/CMakeFiles/filter.dir/requires
 
 src/CMakeFiles/filter.dir/clean:

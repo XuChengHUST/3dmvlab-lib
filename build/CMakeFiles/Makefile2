@@ -56,17 +56,19 @@ CMAKE_BINARY_DIR = /home/root/LEARN/task/3dmvlab-lib/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/cluster.dir/all
+src/all: src/CMakeFiles/common.dir/all
 src/all: src/CMakeFiles/filter.dir/all
 src/all: src/CMakeFiles/io.dir/all
 src/all: src/CMakeFiles/kdtree.dir/all
+src/all: src/CMakeFiles/registration.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/cluster.dir/clean
+src/clean: src/CMakeFiles/common.dir/clean
 src/clean: src/CMakeFiles/filter.dir/clean
 src/clean: src/CMakeFiles/io.dir/clean
 src/clean: src/CMakeFiles/kdtree.dir/clean
+src/clean: src/CMakeFiles/registration.dir/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -74,48 +76,48 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/cluster.dir
+# Target rules for target src/CMakeFiles/common.dir
 
 # All Build rule for target.
-src/CMakeFiles/cluster.dir/all:
-	$(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/depend
-	$(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  1 2
-	@echo "Built target cluster"
-.PHONY : src/CMakeFiles/cluster.dir/all
+src/CMakeFiles/common.dir/all:
+	$(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/depend
+	$(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  1
+	@echo "Built target common"
+.PHONY : src/CMakeFiles/common.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/cluster.dir/all
+all: src/CMakeFiles/common.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/cluster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/cluster.dir/all
+src/CMakeFiles/common.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/cluster.dir/rule
+.PHONY : src/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
-cluster: src/CMakeFiles/cluster.dir/rule
-.PHONY : cluster
+common: src/CMakeFiles/common.dir/rule
+.PHONY : common
 
 # clean rule for target.
-src/CMakeFiles/cluster.dir/clean:
-	$(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/clean
-.PHONY : src/CMakeFiles/cluster.dir/clean
+src/CMakeFiles/common.dir/clean:
+	$(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/clean
+.PHONY : src/CMakeFiles/common.dir/clean
 
 # clean rule for target.
-clean: src/CMakeFiles/cluster.dir/clean
+clean: src/CMakeFiles/common.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/filter.dir
 
 # All Build rule for target.
-src/CMakeFiles/filter.dir/all:
+src/CMakeFiles/filter.dir/all: src/CMakeFiles/kdtree.dir/all
 	$(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/depend
 	$(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  2 3
 	@echo "Built target filter"
 .PHONY : src/CMakeFiles/filter.dir/all
 
@@ -125,7 +127,7 @@ all: src/CMakeFiles/filter.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/filter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/filter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/filter.dir/rule
@@ -150,7 +152,7 @@ clean: src/CMakeFiles/filter.dir/clean
 src/CMakeFiles/io.dir/all:
 	$(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/depend
 	$(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  5 6 7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  4 5 6
 	@echo "Built target io"
 .PHONY : src/CMakeFiles/io.dir/all
 
@@ -185,7 +187,7 @@ clean: src/CMakeFiles/io.dir/clean
 src/CMakeFiles/kdtree.dir/all:
 	$(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/depend
 	$(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  7
 	@echo "Built target kdtree"
 .PHONY : src/CMakeFiles/kdtree.dir/all
 
@@ -214,62 +216,58 @@ clean: src/CMakeFiles/kdtree.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/registration.dir
+
+# All Build rule for target.
+src/CMakeFiles/registration.dir/all:
+	$(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/depend
+	$(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  8
+	@echo "Built target registration"
+.PHONY : src/CMakeFiles/registration.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/registration.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/registration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/registration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/registration.dir/rule
+
+# Convenience name for target.
+registration: src/CMakeFiles/registration.dir/rule
+.PHONY : registration
+
+# clean rule for target.
+src/CMakeFiles/registration.dir/clean:
+	$(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/clean
+.PHONY : src/CMakeFiles/registration.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/registration.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/testCluster.dir/all
 test/all: test/CMakeFiles/testKdtree.dir/all
+test/all: test/CMakeFiles/testOutlier.dir/all
 test/all: test/CMakeFiles/testPointCloud.dir/all
-test/all: test/CMakeFiles/testRemove.dir/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/testCluster.dir/clean
 test/clean: test/CMakeFiles/testKdtree.dir/clean
+test/clean: test/CMakeFiles/testOutlier.dir/clean
 test/clean: test/CMakeFiles/testPointCloud.dir/clean
-test/clean: test/CMakeFiles/testRemove.dir/clean
 .PHONY : test/clean
 
 # Convenience name for "preinstall" pass in the directory.
 test/preinstall:
 .PHONY : test/preinstall
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/testCluster.dir
-
-# All Build rule for target.
-test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/cluster.dir/all
-test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/io.dir/all
-test/CMakeFiles/testCluster.dir/all: src/CMakeFiles/kdtree.dir/all
-	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/depend
-	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  9
-	@echo "Built target testCluster"
-.PHONY : test/CMakeFiles/testCluster.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/testCluster.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/testCluster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testCluster.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/testCluster.dir/rule
-
-# Convenience name for target.
-testCluster: test/CMakeFiles/testCluster.dir/rule
-.PHONY : testCluster
-
-# clean rule for target.
-test/CMakeFiles/testCluster.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/clean
-.PHONY : test/CMakeFiles/testCluster.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/testCluster.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/testKdtree.dir
@@ -279,7 +277,7 @@ test/CMakeFiles/testKdtree.dir/all: src/CMakeFiles/io.dir/all
 test/CMakeFiles/testKdtree.dir/all: src/CMakeFiles/kdtree.dir/all
 	$(MAKE) -f test/CMakeFiles/testKdtree.dir/build.make test/CMakeFiles/testKdtree.dir/depend
 	$(MAKE) -f test/CMakeFiles/testKdtree.dir/build.make test/CMakeFiles/testKdtree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  9
 	@echo "Built target testKdtree"
 .PHONY : test/CMakeFiles/testKdtree.dir/all
 
@@ -305,6 +303,43 @@ test/CMakeFiles/testKdtree.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/testKdtree.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/testOutlier.dir
+
+# All Build rule for target.
+test/CMakeFiles/testOutlier.dir/all: src/CMakeFiles/io.dir/all
+test/CMakeFiles/testOutlier.dir/all: src/CMakeFiles/kdtree.dir/all
+test/CMakeFiles/testOutlier.dir/all: src/CMakeFiles/filter.dir/all
+	$(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/depend
+	$(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  10
+	@echo "Built target testOutlier"
+.PHONY : test/CMakeFiles/testOutlier.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testOutlier.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testOutlier.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testOutlier.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/testOutlier.dir/rule
+
+# Convenience name for target.
+testOutlier: test/CMakeFiles/testOutlier.dir/rule
+.PHONY : testOutlier
+
+# clean rule for target.
+test/CMakeFiles/testOutlier.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/clean
+.PHONY : test/CMakeFiles/testOutlier.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testOutlier.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -340,43 +375,6 @@ test/CMakeFiles/testPointCloud.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/testPointCloud.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/testRemove.dir
-
-# All Build rule for target.
-test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/filter.dir/all
-test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/io.dir/all
-test/CMakeFiles/testRemove.dir/all: src/CMakeFiles/kdtree.dir/all
-	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/depend
-	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles  12
-	@echo "Built target testRemove"
-.PHONY : test/CMakeFiles/testRemove.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/testRemove.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/testRemove.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testRemove.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/LEARN/task/3dmvlab-lib/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/testRemove.dir/rule
-
-# Convenience name for target.
-testRemove: test/CMakeFiles/testRemove.dir/rule
-.PHONY : testRemove
-
-# clean rule for target.
-test/CMakeFiles/testRemove.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/clean
-.PHONY : test/CMakeFiles/testRemove.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/testRemove.dir/clean
 .PHONY : clean
 
 #=============================================================================

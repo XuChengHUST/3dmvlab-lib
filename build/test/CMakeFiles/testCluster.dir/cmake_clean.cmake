@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/testCluster.dir/testCluster.cpp.o"
-  "../../bin/testCluster.pdb"
-  "../../bin/testCluster"
+  "../bin/testCluster.pdb"
+  "../bin/testCluster"
 )
 
 # Per-language clean rules from dependency scanning.

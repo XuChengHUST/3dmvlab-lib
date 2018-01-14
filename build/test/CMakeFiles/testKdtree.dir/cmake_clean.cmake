@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/testKdtree.dir/testKdtree.cpp.o"
-  "../../bin/testKdtree.pdb"
-  "../../bin/testKdtree"
+  "../bin/testKdtree.pdb"
+  "../bin/testKdtree"
 )
 
 # Per-language clean rules from dependency scanning.

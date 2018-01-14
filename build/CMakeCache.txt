@@ -183,13 +183,19 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 cluster_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
-filter_LIB_DEPENDS:STATIC=
+common_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+filter_LIB_DEPENDS:STATIC=general;kdtree;
 
 //Dependencies for target
 io_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
 kdtree_LIB_DEPENDS:STATIC=general;/usr/local/lib;
+
+//Dependencies for target
+registration_LIB_DEPENDS:STATIC=
 
 
 ########################

@@ -1,3 +1,3 @@
 FILE(REMOVE_RECURSE
-  "../../lib/libkdtree.a"
+  "../lib/libkdtree.a"
 )

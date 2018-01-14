@@ -99,18 +99,18 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/cluster.dir/rule:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/cluster.dir/rule
-.PHONY : src/CMakeFiles/cluster.dir/rule
+src/CMakeFiles/common.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common.dir/rule
+.PHONY : src/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
-cluster: src/CMakeFiles/cluster.dir/rule
-.PHONY : cluster
+common: src/CMakeFiles/common.dir/rule
+.PHONY : common
 
 # fast build rule for target.
-cluster/fast:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/build
-.PHONY : cluster/fast
+common/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/build
+.PHONY : common/fast
 
 # Convenience name for target.
 src/CMakeFiles/filter.dir/rule:
@@ -154,6 +154,20 @@ kdtree/fast:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/build
 .PHONY : kdtree/fast
 
+# Convenience name for target.
+src/CMakeFiles/registration.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/registration.dir/rule
+.PHONY : src/CMakeFiles/registration.dir/rule
+
+# Convenience name for target.
+registration: src/CMakeFiles/registration.dir/rule
+.PHONY : registration
+
+# fast build rule for target.
+registration/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/build
+.PHONY : registration/fast
+
 ac_type.o: ac_type.cpp.o
 .PHONY : ac_type.o
 
@@ -178,29 +192,29 @@ ac_type.cpp.s:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/ac_type.cpp.s
 .PHONY : ac_type.cpp.s
 
-cluster.o: cluster.cpp.o
-.PHONY : cluster.o
+cloud_math.o: cloud_math.cpp.o
+.PHONY : cloud_math.o
 
 # target to build an object file
-cluster.cpp.o:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.o
-.PHONY : cluster.cpp.o
+cloud_math.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/cloud_math.cpp.o
+.PHONY : cloud_math.cpp.o
 
-cluster.i: cluster.cpp.i
-.PHONY : cluster.i
+cloud_math.i: cloud_math.cpp.i
+.PHONY : cloud_math.i
 
 # target to preprocess a source file
-cluster.cpp.i:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.i
-.PHONY : cluster.cpp.i
+cloud_math.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/cloud_math.cpp.i
+.PHONY : cloud_math.cpp.i
 
-cluster.s: cluster.cpp.s
-.PHONY : cluster.s
+cloud_math.s: cloud_math.cpp.s
+.PHONY : cloud_math.s
 
 # target to generate assembly for a file
-cluster.cpp.s:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/cluster.cpp.s
-.PHONY : cluster.cpp.s
+cloud_math.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/cloud_math.cpp.s
+.PHONY : cloud_math.cpp.s
 
 io.o: io.cpp.o
 .PHONY : io.o
@@ -231,8 +245,6 @@ kdtree_flann.o: kdtree_flann.cpp.o
 
 # target to build an object file
 kdtree_flann.cpp.o:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.o
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.o
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.o
 .PHONY : kdtree_flann.cpp.o
 
@@ -241,8 +253,6 @@ kdtree_flann.i: kdtree_flann.cpp.i
 
 # target to preprocess a source file
 kdtree_flann.cpp.i:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.i
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.i
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.i
 .PHONY : kdtree_flann.cpp.i
 
@@ -251,10 +261,32 @@ kdtree_flann.s: kdtree_flann.cpp.s
 
 # target to generate assembly for a file
 kdtree_flann.cpp.s:
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/kdtree_flann.cpp.s
-	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/filter.dir/build.make src/CMakeFiles/filter.dir/kdtree_flann.cpp.s
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/kdtree_flann.cpp.s
 .PHONY : kdtree_flann.cpp.s
+
+point_cloud.o: point_cloud.cpp.o
+.PHONY : point_cloud.o
+
+# target to build an object file
+point_cloud.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/point_cloud.cpp.o
+.PHONY : point_cloud.cpp.o
+
+point_cloud.i: point_cloud.cpp.i
+.PHONY : point_cloud.i
+
+# target to preprocess a source file
+point_cloud.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/point_cloud.cpp.i
+.PHONY : point_cloud.cpp.i
+
+point_cloud.s: point_cloud.cpp.s
+.PHONY : point_cloud.s
+
+# target to generate assembly for a file
+point_cloud.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/point_cloud.cpp.s
+.PHONY : point_cloud.cpp.s
 
 remove_outliers.o: remove_outliers.cpp.o
 .PHONY : remove_outliers.o
@@ -304,36 +336,67 @@ stream.cpp.s:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/stream.cpp.s
 .PHONY : stream.cpp.s
 
+svdRT.o: svdRT.cpp.o
+.PHONY : svdRT.o
+
+# target to build an object file
+svdRT.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/svdRT.cpp.o
+.PHONY : svdRT.cpp.o
+
+svdRT.i: svdRT.cpp.i
+.PHONY : svdRT.i
+
+# target to preprocess a source file
+svdRT.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/svdRT.cpp.i
+.PHONY : svdRT.cpp.i
+
+svdRT.s: svdRT.cpp.s
+.PHONY : svdRT.s
+
+# target to generate assembly for a file
+svdRT.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/svdRT.cpp.s
+.PHONY : svdRT.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... cluster"
+	@echo "... common"
 	@echo "... edit_cache"
 	@echo "... filter"
 	@echo "... io"
 	@echo "... kdtree"
 	@echo "... rebuild_cache"
+	@echo "... registration"
 	@echo "... ac_type.o"
 	@echo "... ac_type.i"
 	@echo "... ac_type.s"
-	@echo "... cluster.o"
-	@echo "... cluster.i"
-	@echo "... cluster.s"
+	@echo "... cloud_math.o"
+	@echo "... cloud_math.i"
+	@echo "... cloud_math.s"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"
 	@echo "... kdtree_flann.o"
 	@echo "... kdtree_flann.i"
 	@echo "... kdtree_flann.s"
+	@echo "... point_cloud.o"
+	@echo "... point_cloud.i"
+	@echo "... point_cloud.s"
 	@echo "... remove_outliers.o"
 	@echo "... remove_outliers.i"
 	@echo "... remove_outliers.s"
 	@echo "... stream.o"
 	@echo "... stream.i"
 	@echo "... stream.s"
+	@echo "... svdRT.o"
+	@echo "... svdRT.i"
+	@echo "... svdRT.s"
 .PHONY : help
 
 

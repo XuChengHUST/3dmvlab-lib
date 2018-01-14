@@ -1,3 +1,9 @@
+set( LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib )
+
+add_library( common STATIC
+  point_cloud.cpp
+)
+
 add_library( io STATIC
   ac_type.cpp
   io.cpp
@@ -8,19 +14,18 @@ add_library( kdtree STATIC
   kdtree_flann.cpp
 )
 target_link_libraries( kdtree
-  ${THIRD_PARTY_LIBS}
+  ${FLANN_LIBS}
 )
-
 
 add_library( filter STATIC
-    remove_outliers.cpp
-    kdtree_flann.cpp
+  remove_outliers.cpp
+  cloud_math.cpp
 )
-# target_link_libraries( filter
-#   ${THIRD_PARTY_LIBS}
-# )
+target_link_libraries( filter
+  kdtree
+)
 
-add_library( cluster STATIC
-  kdtree_flann.cpp
-  cluster.cpp
+
+add_library( registration STATIC
+  svdRT.cpp
 )

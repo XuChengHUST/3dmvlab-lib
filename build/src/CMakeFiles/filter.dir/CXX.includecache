@@ -22,11 +22,29 @@ Eigen/Core
 Eigen/Geometry
 -
 
+../include/filter/remove_outliers.h
+point_cloud.h
+../include/filter/point_cloud.h
+common_include.h
+../include/filter/common_include.h
+math/cloud_math.h
+../include/filter/math/cloud_math.h
+kdtree/kdtree_flann.h
+../include/filter/kdtree/kdtree_flann.h
+
 ../include/kdtree/kdtree_flann.h
 flann/flann.h
 -
 point_cloud.h
 ../include/kdtree/point_cloud.h
+
+../include/math/cloud_math.h
+vector
+-
+numeric
+-
+cmath
+-
 
 ../include/point_cloud.h
 point_type.h
@@ -36,21 +54,9 @@ point_type.h
 common_include.h
 ../include/common_include.h
 
-../include/remove_outliers.h
-point_cloud.h
-../include/point_cloud.h
-common_include.h
-../include/common_include.h
-kdtree/kdtree_flann.h
-../include/kdtree/kdtree_flann.h
-
-/home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp
-kdtree/kdtree_flann.h
-/home/root/LEARN/task/3dmvlab-lib/src/kdtree/kdtree_flann.h
-
 /home/root/LEARN/task/3dmvlab-lib/src/remove_outliers.cpp
-remove_outliers.h
-/home/root/LEARN/task/3dmvlab-lib/src/remove_outliers.h
+filter/remove_outliers.h
+/home/root/LEARN/task/3dmvlab-lib/src/filter/remove_outliers.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

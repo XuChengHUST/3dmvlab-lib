@@ -99,17 +99,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cluster
+# Target rules for targets named common
 
 # Build rule for target.
-cluster: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cluster
-.PHONY : cluster
+common: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 common
+.PHONY : common
 
 # fast build rule for target.
-cluster/fast:
-	$(MAKE) -f src/CMakeFiles/cluster.dir/build.make src/CMakeFiles/cluster.dir/build
-.PHONY : cluster/fast
+common/fast:
+	$(MAKE) -f src/CMakeFiles/common.dir/build.make src/CMakeFiles/common.dir/build
+.PHONY : common/fast
 
 #=============================================================================
 # Target rules for targets named filter
@@ -151,17 +151,17 @@ kdtree/fast:
 .PHONY : kdtree/fast
 
 #=============================================================================
-# Target rules for targets named testCluster
+# Target rules for targets named registration
 
 # Build rule for target.
-testCluster: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testCluster
-.PHONY : testCluster
+registration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 registration
+.PHONY : registration
 
 # fast build rule for target.
-testCluster/fast:
-	$(MAKE) -f test/CMakeFiles/testCluster.dir/build.make test/CMakeFiles/testCluster.dir/build
-.PHONY : testCluster/fast
+registration/fast:
+	$(MAKE) -f src/CMakeFiles/registration.dir/build.make src/CMakeFiles/registration.dir/build
+.PHONY : registration/fast
 
 #=============================================================================
 # Target rules for targets named testKdtree
@@ -177,6 +177,19 @@ testKdtree/fast:
 .PHONY : testKdtree/fast
 
 #=============================================================================
+# Target rules for targets named testOutlier
+
+# Build rule for target.
+testOutlier: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testOutlier
+.PHONY : testOutlier
+
+# fast build rule for target.
+testOutlier/fast:
+	$(MAKE) -f test/CMakeFiles/testOutlier.dir/build.make test/CMakeFiles/testOutlier.dir/build
+.PHONY : testOutlier/fast
+
+#=============================================================================
 # Target rules for targets named testPointCloud
 
 # Build rule for target.
@@ -189,19 +202,6 @@ testPointCloud/fast:
 	$(MAKE) -f test/CMakeFiles/testPointCloud.dir/build.make test/CMakeFiles/testPointCloud.dir/build
 .PHONY : testPointCloud/fast
 
-#=============================================================================
-# Target rules for targets named testRemove
-
-# Build rule for target.
-testRemove: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testRemove
-.PHONY : testRemove
-
-# fast build rule for target.
-testRemove/fast:
-	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
-.PHONY : testRemove/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,14 +210,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cluster"
+	@echo "... common"
 	@echo "... filter"
 	@echo "... io"
 	@echo "... kdtree"
-	@echo "... testCluster"
+	@echo "... registration"
 	@echo "... testKdtree"
+	@echo "... testOutlier"
 	@echo "... testPointCloud"
-	@echo "... testRemove"
 .PHONY : help
 
 

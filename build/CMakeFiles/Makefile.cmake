@@ -48,12 +48,12 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/cluster.dir/DependInfo.cmake"
+  "src/CMakeFiles/common.dir/DependInfo.cmake"
   "src/CMakeFiles/filter.dir/DependInfo.cmake"
   "src/CMakeFiles/io.dir/DependInfo.cmake"
   "src/CMakeFiles/kdtree.dir/DependInfo.cmake"
-  "test/CMakeFiles/testCluster.dir/DependInfo.cmake"
+  "src/CMakeFiles/registration.dir/DependInfo.cmake"
   "test/CMakeFiles/testKdtree.dir/DependInfo.cmake"
+  "test/CMakeFiles/testOutlier.dir/DependInfo.cmake"
   "test/CMakeFiles/testPointCloud.dir/DependInfo.cmake"
-  "test/CMakeFiles/testRemove.dir/DependInfo.cmake"
   )
