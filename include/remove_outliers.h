@@ -1,11 +1,7 @@
-<<<<<<< HEAD
+
 #ifndef REMOVE_OUTLIERS_H
 #define REMOVE_OUTLIERS_H
 
-=======
-#ifndef REMOVEOUTLIERS_H
-#define REMOVEOUTLIERS_H
->>>>>>> dev
 #include "point_cloud.h"
 #include "common_include.h"
 #include "kdtree/kdtree_flann.h"
