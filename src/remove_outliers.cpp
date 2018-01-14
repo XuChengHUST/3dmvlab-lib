@@ -2,14 +2,16 @@
 
 namespace pc {
   void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,
-                       int k , float factor ) {
+                       int k , float factor )
+  {
     indices.clear();
     pc::KdTreeFLANN kdtree;
     kdtree.setInputCloud(cloud);
 
     //计算每个点到最近K个点的平均距离
     std::vector<float> meandists_point_knn;
-    for(size_t i = 0; i != cloud.size(); ++i ) {
+    for(size_t i = 0; i != cloud.size(); ++i )
+    {
       std::vector<int> k_indices;
       std::vector<float> k_sqr_distances;
       kdtree.nearestKSearch(cloud.at(i), k, k_indices, k_sqr_distances);
@@ -29,7 +31,8 @@ namespace pc {
     float min_dist_threshold = meandist_cloud_knn - factor * stdevdist_cloud_knn;
     float max_dist_threshold = meandist_cloud_knn + factor * stdevdist_cloud_knn;
 
-    for(size_t i = 0; i != meandists_point_knn.size(); ++i) {
+    for(size_t i = 0; i != meandists_point_knn.size(); ++i)
+    {
       if(meandists_point_knn.at(k) >= min_dist_threshold &&
          meandists_point_knn.at(k) <= max_dist_threshold)
         indices.push_back(i);

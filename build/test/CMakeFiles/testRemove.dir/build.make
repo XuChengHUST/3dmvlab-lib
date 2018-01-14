@@ -84,6 +84,7 @@ testRemove_EXTERNAL_OBJECTS =
 ../bin/testRemove: ../lib/libkdtree.a
 ../bin/testRemove: ../lib/libio.a
 ../bin/testRemove: ../lib/libfilter.a
+../bin/testRemove: ../lib/libmath.a
 ../bin/testRemove: test/CMakeFiles/testRemove.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/testRemove"
 	cd /home/root/LEARN/task/3dmvlab-lib/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testRemove.dir/link.txt --verbose=$(VERBOSE)

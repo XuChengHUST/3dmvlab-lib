@@ -211,6 +211,7 @@ src/CMakeFiles/filter.dir/kdtree_flann.cpp.o
 src/CMakeFiles/filter.dir/remove_outliers.cpp.o
  ../include/common_include.h
  ../include/kdtree/kdtree_flann.h
+ ../include/math/cloud_math.h
  ../include/point_cloud.h
  ../include/point_type.h
  ../include/remove_outliers.h

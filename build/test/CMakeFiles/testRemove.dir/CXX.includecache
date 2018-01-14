@@ -40,6 +40,18 @@ flann/flann.h
 point_cloud.h
 ../include/kdtree/point_cloud.h
 
+../include/math/cloud_math.h
+vector
+-
+numeric
+-
+cmath
+-
+point_type.h
+../include/math/point_type.h
+point_cloud.h
+../include/math/point_cloud.h
+
 ../include/point_cloud.h
 point_type.h
 ../include/point_type.h
@@ -51,10 +63,14 @@ common_include.h
 ../include/remove_outliers.h
 point_cloud.h
 ../include/point_cloud.h
+point_type.h
+../include/point_type.h
 common_include.h
 ../include/common_include.h
 kdtree/kdtree_flann.h
 ../include/kdtree/kdtree_flann.h
+math/cloud_math.h
+../include/math/cloud_math.h
 
 /home/root/LEARN/task/3dmvlab-lib/test/testRemove.cpp
 io/io.h

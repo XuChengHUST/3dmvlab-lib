@@ -12,11 +12,16 @@ target_link_libraries( testKdtree
 
 add_executable( testRemove testRemove.cpp )
 target_link_libraries( testRemove
-  kdtree io filter
+  kdtree io filter math
   ${THIRD_PARTY_LIBS}
 )
 
 add_executable( testCluster testCluster.cpp )
 target_link_libraries(testCluster
   kdtree io cluster
+)
+
+add_executable( testmath testmath.cpp )
+target_link_libraries(testmath
+  io math
 )

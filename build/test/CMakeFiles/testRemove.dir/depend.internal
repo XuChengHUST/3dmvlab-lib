@@ -6,6 +6,7 @@ test/CMakeFiles/testRemove.dir/testRemove.cpp.o
  ../include/io/ac_type.h
  ../include/io/io.h
  ../include/kdtree/kdtree_flann.h
+ ../include/math/cloud_math.h
  ../include/point_cloud.h
  ../include/point_type.h
  ../include/remove_outliers.h

@@ -66,10 +66,6 @@ ctime
 algorithm
 -
 
-/home/root/LEARN/task/3dmvlab-lib/src/kdtree_flann.cpp
-kdtree/kdtree_flann.h
-/home/root/LEARN/task/3dmvlab-lib/src/kdtree/kdtree_flann.h
-
 /usr/include/eigen3/Eigen/Cholesky
 Core
 /usr/include/eigen3/Eigen/Core

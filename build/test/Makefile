@@ -154,6 +154,20 @@ testRemove/fast:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
 .PHONY : testRemove/fast
 
+# Convenience name for target.
+test/CMakeFiles/testmath.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testmath.dir/rule
+.PHONY : test/CMakeFiles/testmath.dir/rule
+
+# Convenience name for target.
+testmath: test/CMakeFiles/testmath.dir/rule
+.PHONY : testmath
+
+# fast build rule for target.
+testmath/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testmath.dir/build.make test/CMakeFiles/testmath.dir/build
+.PHONY : testmath/fast
+
 testCluster.o: testCluster.cpp.o
 .PHONY : testCluster.o
 
@@ -250,6 +264,30 @@ testRemove.cpp.s:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/testRemove.cpp.s
 .PHONY : testRemove.cpp.s
 
+testmath.o: testmath.cpp.o
+.PHONY : testmath.o
+
+# target to build an object file
+testmath.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testmath.dir/build.make test/CMakeFiles/testmath.dir/testmath.cpp.o
+.PHONY : testmath.cpp.o
+
+testmath.i: testmath.cpp.i
+.PHONY : testmath.i
+
+# target to preprocess a source file
+testmath.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testmath.dir/build.make test/CMakeFiles/testmath.dir/testmath.cpp.i
+.PHONY : testmath.cpp.i
+
+testmath.s: testmath.cpp.s
+.PHONY : testmath.s
+
+# target to generate assembly for a file
+testmath.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f test/CMakeFiles/testmath.dir/build.make test/CMakeFiles/testmath.dir/testmath.cpp.s
+.PHONY : testmath.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,6 +300,7 @@ help:
 	@echo "... testKdtree"
 	@echo "... testPointCloud"
 	@echo "... testRemove"
+	@echo "... testmath"
 	@echo "... testCluster.o"
 	@echo "... testCluster.i"
 	@echo "... testCluster.s"
@@ -274,6 +313,9 @@ help:
 	@echo "... testRemove.o"
 	@echo "... testRemove.i"
 	@echo "... testRemove.s"
+	@echo "... testmath.o"
+	@echo "... testmath.i"
+	@echo "... testmath.s"
 .PHONY : help
 
 

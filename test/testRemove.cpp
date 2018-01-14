@@ -11,7 +11,10 @@ int main(int argc, char** argv) {
     return 1;
   }
   pc::PointCloud pts;
-  pc::readACToPointCloud(argv[1], pts);
+  // pc::readACToPointCloud(argv[1], pts);
+  // void readACToPointCloud(const std::string& filename, pc::PointCloud& pc);
+  // void ReadASC_xyz(const std::string& filename, pc::PointCloud& pc);
+  pc::ReadASC_xyz(argv[1],pts);
   std::vector<int> rest_point;
   float a = atof(argv[2]);
   int k = atoi(argv[3]);

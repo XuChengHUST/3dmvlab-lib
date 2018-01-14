@@ -154,6 +154,20 @@ kdtree/fast:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/kdtree.dir/build.make src/CMakeFiles/kdtree.dir/build
 .PHONY : kdtree/fast
 
+# Convenience name for target.
+src/CMakeFiles/math.dir/rule:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/math.dir/rule
+.PHONY : src/CMakeFiles/math.dir/rule
+
+# Convenience name for target.
+math: src/CMakeFiles/math.dir/rule
+.PHONY : math
+
+# fast build rule for target.
+math/fast:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/build
+.PHONY : math/fast
+
 ac_type.o: ac_type.cpp.o
 .PHONY : ac_type.o
 
@@ -177,6 +191,30 @@ ac_type.s: ac_type.cpp.s
 ac_type.cpp.s:
 	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/io.dir/build.make src/CMakeFiles/io.dir/ac_type.cpp.s
 .PHONY : ac_type.cpp.s
+
+cloud_math.o: cloud_math.cpp.o
+.PHONY : cloud_math.o
+
+# target to build an object file
+cloud_math.cpp.o:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cloud_math.cpp.o
+.PHONY : cloud_math.cpp.o
+
+cloud_math.i: cloud_math.cpp.i
+.PHONY : cloud_math.i
+
+# target to preprocess a source file
+cloud_math.cpp.i:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cloud_math.cpp.i
+.PHONY : cloud_math.cpp.i
+
+cloud_math.s: cloud_math.cpp.s
+.PHONY : cloud_math.s
+
+# target to generate assembly for a file
+cloud_math.cpp.s:
+	cd /home/root/LEARN/task/3dmvlab-lib/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cloud_math.cpp.s
+.PHONY : cloud_math.cpp.s
 
 cluster.o: cluster.cpp.o
 .PHONY : cluster.o
@@ -315,10 +353,14 @@ help:
 	@echo "... filter"
 	@echo "... io"
 	@echo "... kdtree"
+	@echo "... math"
 	@echo "... rebuild_cache"
 	@echo "... ac_type.o"
 	@echo "... ac_type.i"
 	@echo "... ac_type.s"
+	@echo "... cloud_math.o"
+	@echo "... cloud_math.i"
+	@echo "... cloud_math.s"
 	@echo "... cluster.o"
 	@echo "... cluster.i"
 	@echo "... cluster.s"

@@ -24,3 +24,7 @@ add_library( cluster STATIC
   kdtree_flann.cpp
   cluster.cpp
 )
+
+add_library( math STATIC
+  cloud_math.cpp
+)

@@ -52,8 +52,10 @@ SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/filter.dir/DependInfo.cmake"
   "src/CMakeFiles/io.dir/DependInfo.cmake"
   "src/CMakeFiles/kdtree.dir/DependInfo.cmake"
+  "src/CMakeFiles/math.dir/DependInfo.cmake"
   "test/CMakeFiles/testCluster.dir/DependInfo.cmake"
   "test/CMakeFiles/testKdtree.dir/DependInfo.cmake"
   "test/CMakeFiles/testPointCloud.dir/DependInfo.cmake"
   "test/CMakeFiles/testRemove.dir/DependInfo.cmake"
+  "test/CMakeFiles/testmath.dir/DependInfo.cmake"
   )

@@ -191,6 +191,9 @@ io_LIB_DEPENDS:STATIC=
 //Dependencies for the target
 kdtree_LIB_DEPENDS:STATIC=general;/usr/local/lib;
 
+//Dependencies for target
+math_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

@@ -151,6 +151,19 @@ kdtree/fast:
 .PHONY : kdtree/fast
 
 #=============================================================================
+# Target rules for targets named math
+
+# Build rule for target.
+math: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 math
+.PHONY : math
+
+# fast build rule for target.
+math/fast:
+	$(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/build
+.PHONY : math/fast
+
+#=============================================================================
 # Target rules for targets named testCluster
 
 # Build rule for target.
@@ -202,6 +215,19 @@ testRemove/fast:
 	$(MAKE) -f test/CMakeFiles/testRemove.dir/build.make test/CMakeFiles/testRemove.dir/build
 .PHONY : testRemove/fast
 
+#=============================================================================
+# Target rules for targets named testmath
+
+# Build rule for target.
+testmath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testmath
+.PHONY : testmath
+
+# fast build rule for target.
+testmath/fast:
+	$(MAKE) -f test/CMakeFiles/testmath.dir/build.make test/CMakeFiles/testmath.dir/build
+.PHONY : testmath/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,10 +240,12 @@ help:
 	@echo "... filter"
 	@echo "... io"
 	@echo "... kdtree"
+	@echo "... math"
 	@echo "... testCluster"
 	@echo "... testKdtree"
 	@echo "... testPointCloud"
 	@echo "... testRemove"
+	@echo "... testmath"
 .PHONY : help
 
 
