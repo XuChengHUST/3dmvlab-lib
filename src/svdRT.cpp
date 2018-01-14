@@ -1,4 +1,4 @@
-#include "svdRT.h"
+#include "registration/svdRT.h"
 
 namespace pc {
   Eigen::Matrix4f svdRT(const Eigen::MatrixX3f& P, const Eigen::MatrixX3f& Q) {
@@ -12,14 +12,14 @@ namespace pc {
     Eigen::Vector3f centra_Q = Q.colwise().mean();
     Eigen::MatrixX3f centralized_Q = Q - centra_Q.replicate(Q.rows(), 1);
 
-    Eigen::Matrix3f W = Centralized_Q.transpose() * Centralized_P;
+    Eigen::Matrix3f W = centralized_Q.transpose() * centralized_P;
     Eigen::FullPivLU<Eigen::Matrix3f> lu_decomp(W);
     Eigen::JacobiSVD<Eigen::Matrix3f> svd(W, Eigen::ComputeThinU | Eigen::ComputeThinV);
 
     Eigen::Matrix3f S = Eigen::Matrix3f::Identity();
     S(2,2) = svd.matrixU().determinant() * svd.matrixV().determinant();
     Eigen::Matrix3f R = svd.matrixU() * S * svd.matrixV().transpose();
-    Eigen::Vector3d t = Centra_Q - R * Centra_P;
+    Eigen::Vector3f t = centra_Q - R * centra_P;
 
     Eigen::Matrix4f T = Eigen::Matrix4f::Identity();
     T.block<3,3>(0,0) = R;
