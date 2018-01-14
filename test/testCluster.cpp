@@ -6,8 +6,9 @@
 #include <vector>
 #include <string>
 
-int main(int argc, char** argv) {
-  if(argc != 4) {
+int main(int argc, char** argv)
+{
+  if(argc != 4){
     std::cout << "usage:remove_outliers" << '\n';
     return 1;
   }

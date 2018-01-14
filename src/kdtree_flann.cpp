@@ -15,8 +15,8 @@ namespace pc {
   }
 
   void KdTreeFLANN::nearestKSearch(const PointNormal& pt, int k,
-                                  std::vector<int> &k_indices,
-                                  std::vector<float> &k_sqr_distances) const {
+                                  std::vector<int>& k_indices,
+                                  std::vector<float>& k_sqr_distances) const {
     k_indices.resize(k);
     k_sqr_distances.resize(k);
 
