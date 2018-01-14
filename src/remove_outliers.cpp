@@ -1,4 +1,4 @@
-#include "remove_outliers.h"
+#include "filter/remove_outliers.h"
 
 namespace pc {
   void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,

@@ -6,8 +6,8 @@
 #include "kdtree/kdtree_flann.h"
 
 namespace pc {
-  void remove_outliers(pc::PointCloud& cloud, std::vector<int>& out,
-                       int k = 10, float factor = 1.0f);
+  void remove_outliers(pc::PointCloud& cloud, std::vector<int>& indices,
+                       int k, float factor);
 }
 
 #endif
