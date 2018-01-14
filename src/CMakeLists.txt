@@ -14,10 +14,10 @@ target_link_libraries( kdtree
 )
 
 add_library( filter STATIC
-    remove_outliers.cpp
-    kdtree_flann.cpp
+  remove_outliers.cpp
+  kdtree_flann.cpp
 )
 
 add_library( registration STATIC
-    svdRT.cpp
+  svdRT.cpp
 )
