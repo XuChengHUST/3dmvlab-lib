@@ -147,6 +147,7 @@ namespace pc {
   };
 
   std::ostream& operator << (std::ostream& os, const PointCloud& pc);
+  bool mapCloudToMatrix(const PointCloud& pts, Eigen::MatrixX3f& matrix);
 }
 
 #endif
