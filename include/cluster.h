@@ -1,7 +1,6 @@
 #ifndef CLUSTER_H
 #define CLUSTER_H
 
-#include "cluster.h"
 #include "kdtree/kdtree_flann.h"
 #include <list>
 #include <vector>
