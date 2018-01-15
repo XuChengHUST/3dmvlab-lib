@@ -14,3 +14,8 @@ add_executable( testOutlier testRemove.cpp )
 target_link_libraries( testOutlier
   io filter
 )
+
+add_executable( testVoxelFilter testVoxelFilter.cpp )
+target_link_libraries( testVoxelFilter
+  io filter
+)
