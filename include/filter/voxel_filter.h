@@ -5,6 +5,7 @@
 #include "point_cloud.h"
 #include "point_type.h"
 #include "common_include.h"
+#include <cfloat>
 
 namespace pc{
 
