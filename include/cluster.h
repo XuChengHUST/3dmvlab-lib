@@ -6,6 +6,7 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
+#include <vector>
 
 namespace pc{
   void cluster(pc::PointCloud& cloud, std::vector<std::vector<int> >& cluster_indices, int k_close, float distance_threshold);
